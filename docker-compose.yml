@@ -1,0 +1,11 @@
+services:
+  client:
+    ports:
+      - 3000:3000
+    build:
+      context: "./client"
+      dockerfile: "Dockerfile"
+    volumes:
+      - ./client:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next

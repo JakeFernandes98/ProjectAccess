@@ -9,3 +9,13 @@ services:
       - ./client:/usr/src/app
       - /usr/src/app/node_modules
       - /usr/src/app/.next
+  server:
+    ports:
+      - 8000:8000
+    build:
+      context: "./server"
+      dockerfile: "Dockerfile"
+    volumes:
+      - ./server:/usr/src/server
+      - /usr/src/server/node_modules
+      - /usr/src/server/dist

@@ -105,3 +105,6 @@ dist
 
 # MAC
 .DS_Store
+
+# Postgres
+postgres/data

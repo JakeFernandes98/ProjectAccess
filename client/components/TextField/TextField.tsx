@@ -1,12 +1,26 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import MUITextField from '@mui/material/TextField';
 import TextFieldProps from './TextField.types';
 
-export default function BasicTextFields({label}:TextFieldProps) {
+export default function TextField({
+  label,
+  variant,
+  disabled,
+  error,
+  fullWidth,
+  type,
+  required
+}:TextFieldProps) {
   return (
-    <Box component="form" > 
-      <TextField variant="outlined" label={label}></TextField>
-    </Box>
+      <MUITextField 
+      variant={variant}
+      label={label}
+      disabled={disabled}
+      error={error}
+      fullWidth={fullWidth}
+      type={type}
+      required={required}
+      >
+      </MUITextField>
   );
 }

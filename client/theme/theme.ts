@@ -16,6 +16,13 @@ const theme = createTheme({
             textTransform: 'none',
           }
         }
+      },
+      MuiTextField:{
+        styleOverrides: {
+          root: {
+            textTransform: 'none',
+          }
+        }
       }
     }
   });

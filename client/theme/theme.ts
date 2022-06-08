@@ -9,22 +9,22 @@ const theme = createTheme({
       main: red[500],
     },
   },
-    components: {
-      MuiButton:{
-        styleOverrides: {
-          root: {
-            textTransform: 'none',
-          }
-        }
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none',
+        },
       },
-      MuiTextField:{
-        styleOverrides: {
-          root: {
-            textTransform: 'none',
-          }
-        }
-      }
-    }
-  });
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none',
+        },
+      },
+    },
+  },
+});
 
 export default theme;

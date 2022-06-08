@@ -9,10 +9,10 @@ export default function TextField({
   error,
   fullWidth,
   type,
-  required
-}:TextFieldProps) {
+  required,
+}: TextFieldProps) {
   return (
-      <MUITextField 
+    <MUITextField
       variant={variant}
       label={label}
       disabled={disabled}
@@ -20,7 +20,6 @@ export default function TextField({
       fullWidth={fullWidth}
       type={type}
       required={required}
-      >
-      </MUITextField>
+    ></MUITextField>
   );
 }

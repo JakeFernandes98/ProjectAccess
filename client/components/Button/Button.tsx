@@ -1,10 +1,23 @@
-import * as React from 'react';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import ButtonProps from './Button.types';
+import * as React from "react";
 
-export default function BasicButtons({label, color}:ButtonProps) {
+import MUIButton from "@mui/material/Button";
+import ButtonProps from "./Button.types";
+
+export default function Button({
+  label,
+  color,
+  variant,
+  fullWidth,
+  disabled,
+}: ButtonProps) {
   return (
-      <Button color={color} variant="contained">{label}</Button>
+    <MUIButton
+      color={color}
+      variant={variant}
+      fullWidth={fullWidth}
+      disabled={disabled}
+    >
+      {label}
+    </MUIButton>
   );
 }

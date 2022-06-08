@@ -3,8 +3,10 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import ButtonProps from './Button.types';
 
-export default function BasicButtons({label, color}:ButtonProps) {
+export default function BasicButtons({ label, color }: ButtonProps) {
   return (
-      <Button color={color} variant="contained">{label}</Button>
+    <Button color={color} variant="contained">
+      {label}
+    </Button>
   );
 }

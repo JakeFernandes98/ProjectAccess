@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import MUIButton from "@mui/material/Button";
-import ButtonProps from "./Button.types";
+import MUIButton from '@mui/material/Button';
+import ButtonProps from './Button.types';
 
 export default function Button({
   label,

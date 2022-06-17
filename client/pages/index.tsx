@@ -3,6 +3,7 @@ import type { NextPage } from 'next';
 import Button from '../components/Button/Button';
 import TextField from '../components/TextField/TextField';
 import Typography from '../components/Typography/Typography';
+import Avatar from '../components/Avatar/Avatar';
 
 const Home: NextPage = () => {
   return (
@@ -58,6 +59,12 @@ const Home: NextPage = () => {
           variant="filled"
           type="password"
         ></TextField>
+        <br />
+        <Avatar
+          src="https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?ssl=1"
+          alt="Avatar image"
+          sx={{ width: 24, height: 24 }}
+        ></Avatar>
       </div>
     </div>
   );

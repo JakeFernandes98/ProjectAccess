@@ -9,7 +9,6 @@ export default function Checkbox({
   size,
   required,
   disableRipple,
-  defaultChecked,
 }: CheckboxProps) {
   return (
     <MUICheckbox
@@ -19,7 +18,6 @@ export default function Checkbox({
       size={size}
       required={required}
       disableRipple={disableRipple}
-      defaultChecked={defaultChecked}
     ></MUICheckbox>
   );
 }

@@ -9,6 +9,9 @@ import Checkbox from '../components/Checkbox/Checkbox';
 import Box from '../components/Box/Box';
 import Grid from '../components/Grid/Grid';
 import Container from '../components/Container/Container';
+import BasicCard from '../components/Card/BasicCard';
+import Card from '../components/Card/Card';
+import CardContent from '../components/Card/CardContent';
 
 const Home: NextPage = () => {
   return (
@@ -148,6 +151,7 @@ const Home: NextPage = () => {
           </Grid>
         </Box>
       </Container>
+      <BasicCard />
     </div>
   );
 };

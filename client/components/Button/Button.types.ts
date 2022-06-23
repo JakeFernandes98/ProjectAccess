@@ -6,7 +6,9 @@ type buttonColorType =
   | 'error'
   | 'info'
   | 'warning';
+
 type buttonVariantType = 'contained' | 'outlined' | 'text';
+
 export default interface ButtonProps {
   /** The button text */
   label: string;

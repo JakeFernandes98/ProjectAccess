@@ -1,10 +1,10 @@
 import * as React from 'react';
-import Card from './Card';
-import CardActions from './CardActions';
-import CardContent from './CardContent';
-import CardMedia from './CardMedia';
-import Button from '../Button/Button';
-import Typography from '../Typography/Typography';
+import Card from '../Card/Card';
+import CardActions from '../CardActions/CardActions';
+import CardContent from '../CardContent/CardContent';
+import CardMedia from '../CardMedia/CardMedia';
+import Button from '../../Button/Button';
+import Typography from '../../Typography/Typography';
 
 export default function BasicCard() {
   return (

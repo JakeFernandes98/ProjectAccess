@@ -4,7 +4,6 @@ import Button from '../components/Button/Button';
 import TextField from '../components/TextField/TextField';
 import Typography from '../components/Typography/Typography';
 import Avatar from '../components/Avatar/Avatar';
-import FormControlLabel from '../components/FormControlLabel/FormControlLabel';
 import Checkbox from '../components/Checkbox/Checkbox';
 import Box from '../components/Box/Box';
 import Grid from '../components/Grid/Grid';
@@ -112,11 +111,7 @@ const Home: NextPage = () => {
               xs={6}
               justifyContent="flex-start"
             >
-              <FormControlLabel
-                control={<Checkbox color="primary" />}
-                label="Remember me"
-                value="Remember me"
-              />
+              <Checkbox label="My Checkbox" />
             </Grid>
             <Grid
               container

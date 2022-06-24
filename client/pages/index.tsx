@@ -4,13 +4,15 @@ import Button from '../components/Button/Button';
 import TextField from '../components/TextField/TextField';
 import Typography from '../components/Typography/Typography';
 import Avatar from '../components/Avatar/Avatar';
-import FormControlLabel from '../components/FormControlLabel/FormControlLabel';
 import Checkbox from '../components/Checkbox/Checkbox';
+import Box from '../components/Box/Box';
+import Grid from '../components/Grid/Grid';
+import Container from '../components/Container/Container';
 
 const Home: NextPage = () => {
   return (
     <div>
-      <header>
+      <div>
         <Typography
           variant="h2"
           component="h1"
@@ -37,38 +39,110 @@ const Home: NextPage = () => {
         >
           This is an example using the secondary color.
         </Typography>
-      </header>
-      <div>
-        <Button
-          label="This is a button"
-          variant="contained"
-        ></Button>
-        <br />
-        <Button
-          label="This is another button"
-          variant="outlined"
-          color="secondary"
-        ></Button>
-        <br />
-        <TextField
-          label="Email text field"
-          variant="filled"
-          type="email"
-        ></TextField>
-        <br />
-        <TextField
-          label="Password text field"
-          variant="filled"
-          type="password"
-        ></TextField>
-        <br />
-        <Avatar
-          src="https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?ssl=1"
-          alt="Avatar image"
-          sx={{ width: 24, height: 24 }}
-        ></Avatar>
-        <Checkbox label="My Checkbox"></Checkbox>
       </div>
+      <Container
+        component="main"
+        maxWidth="xs"
+      >
+        <Box
+          sx={{
+            marginTop: 8,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <Grid
+            container
+            columns={12}
+            direction="column"
+            rowSpacing={1}
+          >
+            <Grid
+              container
+              item
+              xs={6}
+              justifyContent="center"
+            >
+              <Avatar
+                src="https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?ssl=1"
+                alt="Avatar image"
+                sx={{ width: 48, height: 48 }}
+              ></Avatar>
+            </Grid>
+            <Grid
+              container
+              item
+              xs={6}
+              justifyContent="center"
+            >
+              <TextField
+                label="Email text field"
+                variant="filled"
+                type="email"
+              ></TextField>
+            </Grid>
+            <Grid
+              container
+              item
+              xs={6}
+              justifyContent="center"
+            >
+              <TextField
+                label="Password text field"
+                variant="filled"
+                type="password"
+              ></TextField>
+            </Grid>
+          </Grid>
+          <Grid
+            container
+            direction="row"
+            rowSpacing={3}
+          >
+            <Grid
+              container
+              item
+              xs={3}
+            />
+            <Grid
+              container
+              item
+              xs={6}
+              justifyContent="flex-start"
+            >
+              <Checkbox label="My Checkbox" />
+            </Grid>
+            <Grid
+              container
+              item
+              xs={3}
+            />
+            <Grid
+              container
+              item
+              xs={3}
+            />
+            <Grid
+              container
+              item
+              xs={6}
+            >
+              <Button
+                label="Sign In"
+                variant="contained"
+                color="primary"
+                fullWidth
+              ></Button>
+            </Grid>
+            <Grid
+              container
+              item
+              xs={3}
+            />
+          </Grid>
+        </Box>
+      </Container>
     </div>
   );
 };

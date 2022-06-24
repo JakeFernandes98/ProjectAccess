@@ -67,11 +67,7 @@ const Home: NextPage = () => {
           alt="Avatar image"
           sx={{ width: 24, height: 24 }}
         ></Avatar>
-        <FormControlLabel
-          control={<Checkbox color="primary" />}
-          label="Remember me"
-          value="Remember me"
-        />
+        <Checkbox label="My Checkbox"></Checkbox>
       </div>
     </div>
   );

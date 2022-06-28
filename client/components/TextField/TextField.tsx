@@ -10,6 +10,7 @@ export default function TextField({
   fullWidth,
   type,
   required,
+  helperText,
 }: TextFieldProps) {
   return (
     <MUITextField
@@ -20,6 +21,7 @@ export default function TextField({
       fullWidth={fullWidth}
       type={type}
       required={required}
+      helperText={helperText}
     ></MUITextField>
   );
 }

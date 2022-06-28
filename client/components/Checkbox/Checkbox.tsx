@@ -2,6 +2,7 @@ import * as React from 'react';
 import MUICheckbox from '@mui/material/Checkbox';
 import CheckboxProps from './Checkbox.types';
 import FormControlLabel from '@mui/material/FormControlLabel';
+
 export default function Checkbox({
   checked,
   onChange,

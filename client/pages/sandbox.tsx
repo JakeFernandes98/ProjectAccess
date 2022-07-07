@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 
 import Button from '../components/Button/Button';
 import TextField from '../components/TextField/TextField';
@@ -23,9 +24,18 @@ const Sandbox: NextPage = () => {
           variant="h2"
           component="h1"
           align="center"
+        >
+          Sandbox
+        </Typography>
+        <Typography
+          variant="body2"
+          component="h2"
+          align="center"
           gutterBottom
         >
-          Sandbox page
+          <Link href="/">
+            <a>Back to home</a>
+          </Link>{' '}
         </Typography>
         <Typography
           variant="h5"

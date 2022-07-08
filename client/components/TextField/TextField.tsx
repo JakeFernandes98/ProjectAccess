@@ -10,6 +10,11 @@ export default function TextField({
   fullWidth,
   type,
   required,
+  name,
+  id,
+  autoFocus,
+  autoComplete,
+  sx,
 }: TextFieldProps) {
   return (
     <MUITextField
@@ -20,6 +25,11 @@ export default function TextField({
       fullWidth={fullWidth}
       type={type}
       required={required}
+      name={name}
+      id={id}
+      autoFocus={autoFocus}
+      autoComplete={autoComplete}
+      sx={sx}
     ></MUITextField>
   );
 }

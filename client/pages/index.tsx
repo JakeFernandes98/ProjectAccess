@@ -51,6 +51,7 @@ const Home: NextPage = () => {
             flexDirection: 'column',
             alignItems: 'center',
           }}
+          component="span"
         >
           <Grid
             container

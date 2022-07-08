@@ -9,6 +9,8 @@ export default function Button({
   variant,
   fullWidth,
   disabled,
+  type,
+  sx,
 }: ButtonProps) {
   return (
     <MUIButton
@@ -16,6 +18,8 @@ export default function Button({
       variant={variant}
       fullWidth={fullWidth}
       disabled={disabled}
+      type={type}
+      sx={sx}
     >
       {label}
     </MUIButton>

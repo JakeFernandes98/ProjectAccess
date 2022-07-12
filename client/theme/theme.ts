@@ -6,11 +6,14 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: blue[500],
+      main: '#3b8cd9',
     },
     secondary: {
-      main: red[500],
+      main: '#ffa51f',
     },
+  },
+  typography: {
+    fontFamily: `'Lato', sans-serif`,
   },
   components: {
     MuiButton: {

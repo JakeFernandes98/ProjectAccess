@@ -12,6 +12,7 @@ const theme = createTheme({
       main: '#ffa51f',
     },
   },
+  spacing: 8,
   typography: {
     fontFamily: `'Lato', sans-serif`,
   },

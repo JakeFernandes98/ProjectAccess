@@ -37,6 +37,7 @@ export default function LoginForm() {
           flexDirection: 'column',
           alignItems: 'center',
           boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
+          borderRadius: 2,
           p: 2,
         }}
         component="div"

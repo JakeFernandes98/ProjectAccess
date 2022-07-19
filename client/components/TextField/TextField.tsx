@@ -15,6 +15,7 @@ export default function TextField({
   autoFocus,
   autoComplete,
   sx,
+  helperText,
 }: TextFieldProps) {
   return (
     <MUITextField
@@ -30,6 +31,7 @@ export default function TextField({
       autoFocus={autoFocus}
       autoComplete={autoComplete}
       sx={sx}
+      helperText={helperText}
     ></MUITextField>
   );
 }

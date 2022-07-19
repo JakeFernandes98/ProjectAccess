@@ -8,7 +8,7 @@ import Box from '../Box/Box';
 import Typography from '../Typography/Typography';
 import Container from '../Container/Container';
 
-import Link from '@mui/material/Link';
+import Link from 'next/link';
 
 export default function LoginForm() {
   // on submit just print the email and password to the console for now
@@ -27,7 +27,7 @@ export default function LoginForm() {
       component="main"
       maxWidth="xs"
       sx={{
-        marginTop: 30,
+        marginTop: '20vh',
       }}
     >
       <Box
@@ -90,21 +90,22 @@ export default function LoginForm() {
               item
               xs
             >
-              <Link
-                href="#"
+              {/** NOTE: currently sends user back to home page */}
+              <Typography
+                component="p"
                 variant="body2"
               >
-                Forgot password?
-              </Link>
+                <Link href="/">Forgot password?</Link>
+              </Typography>
             </Grid>
             <Grid item>
               {/** NOTE: currently sends user back to home page */}
-              <Link
-                href="/"
+              <Typography
+                component="p"
                 variant="body2"
               >
-                {"Don't have an account? Sign up"}
-              </Link>
+                <Link href="/">No account? Sign up</Link>
+              </Typography>
             </Grid>
           </Grid>
         </Box>

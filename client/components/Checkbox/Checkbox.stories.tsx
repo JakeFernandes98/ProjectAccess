@@ -1,34 +1,27 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Button from './Button';
+import Checkbox from './Checkbox';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'PROJECT ACCESS COMPONENTS/Button',
-  component: Button,
+  title: 'PROJECT ACCESS COMPONENTS/Checkbox',
+  component: Checkbox,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof Checkbox>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Checkbox> = (args) => (
+  <Checkbox {...args} />
+);
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  label: 'Button',
-  disabled: false,
-  fullWidth: false,
+  label: 'My checkbox',
   color: 'primary',
-  variant: 'contained',
-};
-
-export const Disabled = Template.bind({});
-Disabled.args = {
-  label: 'Button',
-  disabled: true,
-  fullWidth: false,
-  color: 'primary',
-  variant: 'contained',
+  size: 'small',
+  required: false,
+  disableRipple: false,
 };

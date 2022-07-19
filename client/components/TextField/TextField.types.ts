@@ -1,8 +1,10 @@
+import React from 'react';
+
 type textfieldVariantType = 'filled' | 'outlined' | 'standard';
 
 export default interface TextFieldProps {
   /** The text field text */
-  label: string;
+  label?: string;
 
   /** The variant of the text field */
   variant?: textfieldVariantType;
@@ -16,7 +18,7 @@ export default interface TextFieldProps {
   /** If true, the text field takes the entire width of the container */
   fullWidth?: boolean;
 
-  /** The type of the text field - must be a valid HTML5 input type e.g 'email',  */
+  /** The type of the text field - must be a valid HTML5 input type e.g 'email', 'password', 'search', 'text', 'time', 'number', 'datetime-local'  */
   type?: string;
 
   /** If true, the label is displayed as required and the input is required */
@@ -36,4 +38,7 @@ export default interface TextFieldProps {
 
   /** The system prop that allows defining system overrides as well as additional CSS styles. */
   sx?: object;
+
+  /** The helper text content. */
+  helperText?: string;
 }

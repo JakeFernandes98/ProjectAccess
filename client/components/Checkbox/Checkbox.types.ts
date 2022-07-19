@@ -10,14 +10,14 @@ type checkboxColorType =
 type checkboxSizeType = 'medium' | 'small';
 
 export default interface CheckboxProps {
+  /** The checkbox label text */
+  label: string;
+
   /** If true, the component is checked. */
   checked?: boolean;
 
   /** Callback fired when the state is changed. */
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-
-  /** The checkbox label text */
-  label: string;
 
   /** The color of the component. */
   color?: checkboxColorType;

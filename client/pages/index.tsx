@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Typography
-        variant="body1"
+        variant="h5"
         component="h1"
         align="center"
       >
@@ -17,9 +17,13 @@ const Home: NextPage = () => {
         component="h2"
         align="center"
       >
+        <Link href="/login">
+          <a>Log in</a>
+        </Link>
+        <br />
         <Link href="/sandbox">
           <a>Sandbox</a>
-        </Link>{' '}
+        </Link>
       </Typography>
     </div>
   );

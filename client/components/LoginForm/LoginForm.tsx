@@ -11,15 +11,13 @@ import Container from '../Container/Container';
 import Link from 'next/link';
 
 export default function LoginForm() {
-  // on submit just print the email and password to the console for now
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    {
+      /** NOTE: call to db and verification of credentials will be needed here. To access the input, use `data.get('email')` and `data.get('password')` */
+    }
   };
 
   return (
@@ -90,7 +88,7 @@ export default function LoginForm() {
               item
               xs
             >
-              {/** NOTE: currently sends user back to home page */}
+              {/** NOTE: currently sends user back to home page - needs to be replaced by relevant link */}
               <Typography
                 component="p"
                 variant="body2"
@@ -99,7 +97,7 @@ export default function LoginForm() {
               </Typography>
             </Grid>
             <Grid item>
-              {/** NOTE: currently sends user back to home page */}
+              {/** NOTE: currently sends user back to home page - needs to be replaced by relevant link*/}
               <Typography
                 component="p"
                 variant="body2"

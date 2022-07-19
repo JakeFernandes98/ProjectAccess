@@ -1,3 +1,5 @@
+import React from 'react';
+
 type typographyVariantType =
   | 'body1'
   | 'body2'
@@ -28,8 +30,8 @@ type typographyColorType =
   | 'error';
 
 export default interface TypographyProps {
-  /** Content of the typography */
-  children: string;
+  /** Content of the typography, most likely a string */
+  children: React.ReactNode;
 
   /** Applies the theme typography style */
   variant: typographyVariantType;

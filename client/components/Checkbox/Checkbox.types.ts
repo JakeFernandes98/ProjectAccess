@@ -15,8 +15,10 @@ export default interface CheckboxProps {
 
   /** Callback fired when the state is changed. */
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+
   /** The checkbox label text */
   label: string;
+
   /** The color of the component. */
   color?: checkboxColorType;
 
